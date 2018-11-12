@@ -7,7 +7,14 @@ body {
 main {
     
     background-color: #F8E5EE;
+    width: 1000px;
+    height: 1000px;
 
+
+}
+div{
+    align-content: inherit;
+    position: relative;
 }
 ul {
     list-style-type: none;
