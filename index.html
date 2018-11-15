@@ -4,67 +4,79 @@
 <head>
     <meta charset="utf-8" />
     <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
-    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-reboot.css">-->
     <link rel="stylesheet" type="text/css" href="StyleSheet.css">
     <title>Game title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="easytimer.js/dist/easytimer.min.js"></script>
+    <script src="jQueryLab.js"></script>
 
     <style>
     </style>
 </head>
 <body>
     <h1>
-        Game title
+        Super Fantastic Card Game That Has No Faults What So Ever
     </h1>
     <header>
         <nav>
-            <ul>
-                <a href="/">Play!!</a>
-                <a href="/">Saved games</a>
-            </ul>
+
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#New">Play!</a>
+                <a href="#Saved">Saved games</a>
+                <a href="#about">About</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
         </nav>
 
     </header>
 
     <section>
-        <time>Timer</time>
-        <div>Score</div>
+ 
+        <div id="secondTenthsExample">
+            <div class="values">00:00:00:0</div>
+        </div>
+        <div class="score">Score: </div>
 
     </section>
 
 
 
-    <main>
-        <div>
+    <main class="flexibleContainer">
+        <item class="Deck">
             <h2>Deck of cards</h2>
-            <img src="Card_back_01.svg.png" />
-            <br />
-        </div>
-       
-        <div>
-            <h2>Player Card</h2>
-            <img src="240px-Oxygen480-categories-applications-games.svg.png" />
-            <br />
-        </div>
-       
-        <div>
-            <h2>Computer cards</h2>
-            <img src="Card_back_01.svg.png" />
-            <br />
-        </div>
-        
-        <div>
+            <img class="Dec" src="playing-card-back.jpg" />
+        </item>
+
+        <item class="Player">
+            <h2>Player card</h2>
+            <img class="Pla" src="playing-card-back.jpg" />
+        </item>
+
+        <item class="Computer">
+            <h2>Computer card</h2>
+            <img class="Com" src="playing-card-back.jpg" />
+
+        </item>
+
+        <item class="Discarded">
             <h2>Discarded cards</h2>
-            <img src="playing-cards-discarded-on-wet-road-A106BM.jpg" height="10%" width="10%" />
-            <br />
-        </div>
-       
+            <img class="Dis" src="playing-card-back.jpg" />
+
+        </item>
+
+
 
     </main>
 
     <section>
-        <button type="button">New Game</button>
-        <button type="button">Pause</button>
-        <button type="button">Save</button>
+        <button class="button" id="start" style="vertical-align:middle"><span>New Game </span></button>
+        <button class="button" id="stop" style="vertical-align:middle"><span>Pause </span></button>
+        <button class="button" style="vertical-align:middle"><span>Save </span></button>
     </section>
 
     <table>
@@ -84,10 +96,11 @@
                 <td><time>1s</time></td>
             </tr>
         </tbody>
-     
+
 
 
     </table>
+
 
 </body>
 </html>

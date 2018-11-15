@@ -20,7 +20,11 @@ main {
     height: 500px;
     position: center;
     margin: 30px;
+    }
 
+.flexibleContainer {
+    display: flex;
+    justify-content: center;
 }
 
 img.Pla:hover {
@@ -38,14 +42,12 @@ img.Dec:hover {
 
 
 item.Deck {
-    float: left;
     border-radius: 25px;
     margin: 20px;
     text-align: center;
 }
 
 item.Player {
-    float: left;
     border-radius: 25px;
     margin: 20px;
     text-align: center;
@@ -54,7 +56,6 @@ item.Player {
 
 
 item.Computer {
-    float: left;
     border-radius: 25px;
     margin: 20px;
     text-align: center;
@@ -62,7 +63,6 @@ item.Computer {
 
 
 item.Discarded {
-    float: left;
     border-radius: 25px;
     margin: 20px;
     text-align: center;
