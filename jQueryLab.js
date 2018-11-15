@@ -1,6 +1,5 @@
 ﻿// find elements
-var button = $("button")
-//let deckID = "h9owx81kp11c";
+var button = $("button");
 let playerCard; 
 let computerCard;
 
@@ -50,3 +49,25 @@ $.getJSON(url2, { count: 1 })
 
 
 
+var timer = new Timer();
+$('#start.button').click(function () {
+    timer.start();
+});
+$('#pause.button').click(function () {
+    timer.pause();
+});
+$('#chronoExample .stopButton').click(function () {
+    timer.stop();
+});
+$('#chronoExample .resetButton').click(function () {
+    timer.reset();
+});
+timer.addEventListener('secondsUpdated', function (e) {
+    $('div.values').html(timer.getTimeValues().toString());
+});
+timer.addEventListener('started', function (e) {
+    $('div.values').html(timer.getTimeValues().toString());
+});
+timer.addEventListener('reset', function (e) {
+    $('div.values').html(timer.getTimeValues().toString());
+});
