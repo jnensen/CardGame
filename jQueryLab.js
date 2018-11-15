@@ -9,7 +9,7 @@ let url2 = "https://deckofcardsapi.com/api/deck/new/shuffle/";
 
 
 //shuffle and get new deck
-$.getJSON(url2, { count: 9 })
+$.getJSON(url2, { count: 1 })
     .done(function (data) {
         console.log(data.remaining);
         let deckID = data.deck_id;
