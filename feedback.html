@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title></title>
+</head>
+<body>
+    <form>
+        <fieldset>
+
+            <legend>Feedback Form</legend>
+            <div>
+                <label>Enter your name: </label>
+                <br />
+                <input type="text" id="name"
+                       placeholder="Enter name here">
+            </div>
+
+
+            <div>
+                <label>How happy are you with your score? On a scale 0-5</label>
+                <br />
+                <div id="scale">
+                    <label>A bloody disgrace! :'( </label>
+                    <input type="radio" id="0" value="0" />
+                    <input type="radio" id="1" value="1" />
+                    <input type="radio" id="2" value="2" />
+                    <input type="radio" id="3" value="3" />
+                    <input type="radio" id="4" value="4" />
+                    <input type="radio" id="5" value="5" />
+                    <label>Who ho!!!  </label>
+                </div>
+
+            </div>
+
+            <div id="favColor">
+
+                <label>Pick your favourite color</label>
+                <input type="color" id="color" />
+
+            </div>
+
+
+            <button type="submit" id="btn">Submit</button>
+
+
+        </fieldset>
+    </form>
+    <br />
+    <table id="Feedback">
+        <form>
+            <input type='text' id='textId'>
+            <input type='color' id='colorId'>
+            <input type='submit'>
+        </form>
+    </table>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿body{
+    background-color: #0e1dc4;
+}
+fieldset {
+    float:left;
+    margin: 100px;
+    background-color: aqua;
+    color: black;
+    width: 500px;
+    height: 200px;
+
+}
+
+Legend {
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 600;
+    color: black
+}
+
+:invalid {
+    border: 3px dashed red;
+}
+#scale {
+    font-weight: 600;
+    color: #ff6a00;
+    font-size: 20px;
+
+     
+}
+
+#btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#Feedback {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+    #Feedback td, #Feedback th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #Feedback tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #Feedback tr:hover {
+        background-color: #ddd;
+    }
+
+    #Feedback th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+
